@@ -1,0 +1,12 @@
+{
+
+    "baseUrl": "https://prod.skybusiness.co.nz/",
+  
+    
+          "defaultCommandTimeout": 5000,
+          "viewportHeight": 800,
+           "viewportWidth": 1280
+}
+
+       
+  
