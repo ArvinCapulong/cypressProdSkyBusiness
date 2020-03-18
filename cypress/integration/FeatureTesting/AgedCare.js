@@ -6,7 +6,7 @@ describe('Your Business: Aged Care', function () {
 
         cy.title().should('eq', 'Aged Care - Sky Business - Sky New Zealand')
 
-        cy.url().should('eq', 'https://prod.skybusiness.co.nz/paged-care')
+        cy.url().should('eq', 'https://prod.skybusiness.co.nz/aged-care')
 
         cy.location().should((location) => {
             expect(location.protocol).to.eq('https:')
