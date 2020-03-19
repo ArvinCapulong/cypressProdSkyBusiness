@@ -9,17 +9,13 @@ describe('Your Business: Retail & Office', function () {
             expect(location.protocol).to.eq('https:')
         })
     })
-});
 
-describe('Your Business: Retail & Office', function () {
     it('Check main banner, Phone number, image', function () {
         cy.get('#fragment-30440-mavy > div > div > div.fr-banner__content-container > h2 > div').should('be.visible').contains('Retail & Office')
         cy.get('.fr-banner__content-container > h3 > div').should('be.visible').contains('Call 0800 759 333')
         cy.get('.fr-banner__image').should('be.visible').and('have.attr', 'src', '/documents/20315/38837/louis-hansel-wVoP_Q2Bg_A-unsplash.jpg/e070b0e0-7721-63c0-46e0-8e47de73f4b6?version=1.0&t=1583394783894&download=true')
     })
-});
 
-describe('Your Business: Retail & Office', function () {
     it('Check contents: images, text.', function () {
         cy.get('.fr-heading-bs-3 > .fr-heading-text-color-midnight > div').should('be.visible').contains('welcoming and informed environment')
         cy.get('#fragment-21754-ptaf > .fr-paragraph > div > p').should('be.visible').contains('range of News channels, SKY Sports and an extensive choice')
@@ -27,11 +23,8 @@ describe('Your Business: Retail & Office', function () {
         cy.get('#fragment-21754-adsq > .fr-paragraph > div').should('be.visible').contains('01 Keep everyone up to date')
         cy.get('#fragment-21754-jfkf > .fr-paragraph > div').should('be.visible').contains('02 Boost morale')
         cy.get('#fragment-21754-idcf > .fr-paragraph > div').should('be.visible').contains('03 Encourage productivity')
-
     })
-});
 
-describe('Your Business: Retail & Office', function () {
     it('Check contents: Additional Services', function () {
         cy.get('.fr-twri_text-container > h3 > div').should('be.visible').contains('Additional Services')
         cy.get('.fr-twri_text-container > :nth-child(2) > a').should('be.visible').contains('Find out more').and('have.attr', 'href', '/additional-services')
