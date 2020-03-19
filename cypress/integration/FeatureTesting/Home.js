@@ -5,7 +5,6 @@ describe('Production SKY Business Site', function () {
         cy.visit('/')
         cy.title().should('eq', 'Home - Sky Business - Sky New Zealand')
         cy.url().should('eq', 'https://prod.skybusiness.co.nz/')
-
         cy.location().should((location) => {
             expect(location.protocol).to.eq('https:')
         })

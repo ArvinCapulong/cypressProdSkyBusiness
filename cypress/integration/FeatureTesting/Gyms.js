@@ -3,11 +3,8 @@
 describe('Your Business: Gyms', function () {
     it('Checks Gyms asset, title', function () {
         cy.visit('/gyms')
-
         cy.title().should('eq', 'Gyms - Sky Business - Sky New Zealand')
-
         cy.url().should('eq', 'https://prod.skybusiness.co.nz/gyms')
-
         cy.location().should((location) => {
             expect(location.protocol).to.eq('https:')
         })
